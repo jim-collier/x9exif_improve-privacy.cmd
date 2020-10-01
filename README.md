@@ -3,11 +3,12 @@ Uses exiftool on Windows to remove invalid and/or privacy-sensitive fields from 
 
 ## Features
 
-- Retains creator/copyright information.
-- Removes invalid, custom, and non-standard tags.
+- Retains most standard ITPC fields such as creator, copyright, and keyword-related fields.
+- Removes invalid, custom, non-standard, and software-specific tags.
 - Removes fields that, in aggregate, might be considered security and/or privacy risks, such as:
   - GPS coordinates
   - Camera make, model, and lens data
+  - Software used
 - Works on EXIF, XMP, IPTC, and other forms of metadata.
 - Relies on the outstanding free program [`exiftool`](https://exiftool.org/) by Phil Harvey.
 
